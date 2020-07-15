@@ -9,7 +9,7 @@ import numpy as np
 #env_name = "Acrobot-v1"
 #env_name = "Pendulum-v0"
 
-env = gym.make("gym_multiagent_control:foo-v1")
+env = gym.make("gym_multiagent_control:foo-v2")
 print("Observation space:", env.observation_space)
 print("Action space:", env.action_space)
 type(env.action_space)

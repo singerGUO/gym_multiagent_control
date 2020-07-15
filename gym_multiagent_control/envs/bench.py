@@ -11,12 +11,12 @@ if __name__ == '__main__':
     parser.add_argument('--num_runs', type=int, default=3)
     args = parser.parse_args()
 
-    eg = ExperimentGrid(name='ppo-test-cart')
+    eg = ExperimentGrid(name='ppo-test-lunar')
     
     #eg.add('env_name', 'MountainCar-v0', '', True)
     #eg.add('env_name', 'CartPole-v0', '', True)
     #eg.add('env_name', 'gym_multiagent_control:foo-v0', '', True)
-    eg.add('env_name', 'gym_multiagent_control:foo-v1', '', True)
+    eg.add('env_name', 'gym_multiagent_control:foo-v2', '', True)
     eg.add('seed', [10*i for i in range(args.num_runs)])
     eg.add('epochs', 10)
     eg.add('steps_per_epoch', 4000)
