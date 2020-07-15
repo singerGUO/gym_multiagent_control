@@ -4,12 +4,12 @@ import numpy as np
 
 
 #env_name = "CartPole-v1"
-env_name = "MountainCar-v0"
+#env_name = "MountainCar-v0"
 #env_name = "MountainCarContinuous-v0"
 #env_name = "Acrobot-v1"
 #env_name = "Pendulum-v0"
 
-env = gym.make("gym_multiagent_control:foo-v0")
+env = gym.make("gym_multiagent_control:foo-v1")
 print("Observation space:", env.observation_space)
 print("Action space:", env.action_space)
 type(env.action_space)
